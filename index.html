@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ethem Diseño - Full Stack Developer specializing in WordPress, Shopify & Custom Web Development. 90+ PageSpeed guaranteed.">
+    <meta name="keywords" content="wordpress developer, shopify expert, custom web development, full stack developer, ethem diseno">
+    <meta name="author" content="Ethem E.">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ethem Diseño — Full Stack Developer | WordPress & Shopify Expert</title>
+    <link rel="canonical" href="https://www.fiverr.com/ethem_e" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/vxfch82y59-lab/ethem-diseno/main/favicon.png" />
+    <meta property="og:title" content="Ethem Diseño - Full Stack Developer">
+    <meta property="og:description" content="WordPress Expert, Shopify & Custom Web Solutions. 90+ PageSpeed.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fiverr.com/ethem_e">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preload" as="image" href="https://images.pexels.com/photos/34804001/pexels-photo-34804001.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+    <link rel="preload" as="image" href="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+    <link rel="preload" as="image" href="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+    <style>
+        :root {
+            --accent: #00bfff;
+            --secondary-accent: #ff4500;
+            --fiverr-green: #1dbf73;
+            --dark: #0a0a1a;
+            --max-width: 1200px;
+            --header-footer-bg: #14142a;
+            --header-height: 70px;
+            --transition-speed: 0.3s;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        body {
+            font-family: Inter, system-ui, Arial, sans-serif;
+            background: #0a0a1a;
+            color: #dddddd;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        [dir="rtl"] body { font-family:'Cairo',Inter,system-ui,Arial,sans-serif; }
+        body::before {
+            content:'';
+            position:fixed; top:0; left:0; right:0; bottom:0;
+            background-image:
+                linear-gradient(rgba(26,26,56,0.4) 1px,transparent 1px),
+                linear-gradient(90deg,rgba(26,26,56,0.4) 1px,transparent 1px);
+            background-size:20px 20px;
+            pointer-events:none; z-index:0;
+        }
+        @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+        @keyframes slideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes slideDown { from{opacity:0;transform:translateY(-30px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+        @keyframes glow {
+            0%,100%{box-shadow:0 0 5px var(--accent),0 0 10px var(--accent)}
+            50%{box-shadow:0 0 10px var(--accent),0 0 20px var(--accent),0 0 30px var(--accent)}
+        }
+        .stagger-1{animation-delay:.1s} .stagger-2{animation-delay:.2s} .stagger-3{animation-delay:.3s}
+        .stagger-4{animation-delay:.4s} .stagger-5{animation-delay:.5s} .stagger-6{animation-delay:.6s}
+        .scroll-reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease-out,transform .6s ease-out; }
+        .scroll-reveal.revealed { opacity:1; transform:translateY(0); }
+        .container { max-width:var(--max-width); margin:0 auto; padding:0 24px; position:relative; z-index:1; }
+
+        /* HEADER */
+        header {
+            position:fixed; left:0; right:0; top:0;
+            height:var(--header-height); z-index:50;
+            backdrop-filter:blur(10px);
+            background:rgba(20,20,42,0.92);
+            display:flex; align-items:center;
+            border-bottom:1px solid rgba(0,191,255,0.2);
+            animation:slideDown .5s ease-out;
+        }
+        .header-inner { display:flex; justify-content:space-between; align-items:center; width:100%; }
+        .logo-link { display:flex; align-items:center; gap:12px; text-decoration:none; flex-shrink:0; }
+        .logo-svg { width:42px; height:42px; filter:drop-shadow(0 0 8px rgba(0,191,255,0.4)); transition:all var(--transition-speed); }
+        .logo-link:hover .logo-svg { transform:rotate(-5deg) scale(1.1); filter:drop-shadow(0 0 12px rgba(0,191,255,0.6)); }
+        .brand-text { font-family:'Orbitron',sans-serif; font-weight:700; font-size:20px; color:#fff; letter-spacing:1px; }
+        .brand-text .accent { color:var(--accent); }
+
+        .desktop-nav { display:none; align-items:center; gap:4px; }
+        .desktop-nav a {
+            color:#ccc; text-decoration:none; font-size:13px; font-weight:500;
+            padding:8px 12px; border-radius:6px; transition:all var(--transition-speed);
+            white-space:nowrap; position:relative;
+        }
+        .desktop-nav a::after {
+            content:''; position:absolute; bottom:4px; left:12px; right:12px;
+            height:1px; background:var(--accent); transform:scaleX(0); transition:transform var(--transition-speed);
+        }
+        .desktop-nav a:hover { color:#fff; }
+        .desktop-nav a:hover::after { transform:scaleX(1); }
+
+        .header-right { display:flex; align-items:center; gap:10px; }
+        .desktop-lang { display:none; gap:5px; align-items:center; }
+        .desktop-lang .lang-btn {
+            background:rgba(0,191,255,0.08); border:1px solid rgba(0,191,255,0.25);
+            color:#aaa; padding:5px 9px; border-radius:5px; cursor:pointer;
+            font-size:11px; transition:all var(--transition-speed); font-family:Inter,sans-serif;
+        }
+        .desktop-lang .lang-btn:hover { background:rgba(0,191,255,0.18); border-color:var(--accent); color:#fff; }
+        .desktop-lang .lang-btn.active { background:var(--accent); border-color:var(--accent); color:#000; font-weight:700; }
+        .header-fiverr-btn {
+            display:none; background:var(--fiverr-green); color:#fff; text-decoration:none;
+            padding:8px 16px; border-radius:6px; font-size:13px; font-weight:700;
+            transition:all var(--transition-speed); white-space:nowrap;
+        }
+        .header-fiverr-btn:hover { background:#19a463; transform:translateY(-2px); box-shadow:0 4px 15px rgba(29,191,115,0.4); }
+        .hamburger-btn {
+            background:none; border:none; color:#fff; font-size:28px;
+            cursor:pointer; transition:all var(--transition-speed); display:flex; align-items:center;
+        }
+        .hamburger-btn:hover { color:var(--accent); transform:scale(1.1) rotate(90deg); }
+
+        /* MOBİL MENÜ */
+        .menu-overlay { position:fixed; top:0; left:0; right:0; bottom:0; z-index:100; pointer-events:none; opacity:0; transition:opacity var(--transition-speed); }
+        .menu-overlay.show { opacity:1; pointer-events:auto; }
+        .menu-panel {
+            position:absolute; top:0; left:-300px; width:280px; height:100%;
+            background:var(--header-footer-bg); padding:30px 20px;
+            transition:left .4s cubic-bezier(0.68,-0.55,0.265,1.55);
+            border-right:1px solid var(--accent); overflow-y:auto; box-shadow:5px 0 15px rgba(0,0,0,0.3);
+        }
+        [dir="rtl"] .menu-panel { left:auto; right:-300px; border-right:none; border-left:1px solid var(--accent); box-shadow:-5px 0 15px rgba(0,0,0,0.3); transition:right .4s cubic-bezier(0.68,-0.55,0.265,1.55); }
+        .menu-overlay.show .menu-panel { left:0; }
+        [dir="rtl"] .menu-overlay.show .menu-panel { right:0; left:auto; }
+        .menu-backdrop { position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); cursor:pointer; backdrop-filter:blur(5px); }
+        .menu-header { display:flex; align-items:center; gap:10px; margin-bottom:40px; }
+        .menu-title { color:#fff; font-family:'Orbitron',sans-serif; font-size:18px; }
+        .menu-link { display:block; padding:15px 0; text-decoration:none; color:#ccc; font-size:17px; border-bottom:1px solid rgba(255,255,255,0.05); transition:all var(--transition-speed); }
+        .menu-link:hover { color:var(--accent); padding-left:10px; }
+        [dir="rtl"] .menu-link:hover { padding-left:0; padding-right:10px; }
+        .lang-switcher { margin-top:30px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1); }
+        .lang-title { color:#888; font-size:13px; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px; display:flex; align-items:center; gap:8px; }
+        .lang-options { display:flex; gap:8px; flex-wrap:wrap; }
+        .lang-btn { background:rgba(0,191,255,0.1); border:1px solid rgba(0,191,255,0.3); color:#ccc; padding:7px 14px; border-radius:6px; cursor:pointer; font-size:13px; transition:all var(--transition-speed); font-family:Inter,sans-serif; }
+        .lang-btn:hover { background:rgba(0,191,255,0.2); border-color:var(--accent); color:#fff; }
+        .lang-btn.active { background:var(--accent); border-color:var(--accent); color:#000; font-weight:700; }
+
+        /* HERO */
+        .hero { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; background:radial-gradient(ellipse at center,rgba(0,191,255,0.12) 0%,transparent 65%); padding:100px 0 60px; }
+        .hero-content h1 { font-size:clamp(32px,8vw,72px); font-weight:800; margin-bottom:20px; text-shadow:0 0 30px rgba(0,191,255,0.4); animation:slideUp .8s ease-out; line-height:1.1; }
+        .hero-content p { font-size:clamp(15px,2.5vw,21px); margin-bottom:35px; color:#bbb; max-width:750px; margin-left:auto; margin-right:auto; animation:slideUp 1s ease-out; line-height:1.7; }
+        .fiverr-badge { display:inline-block; background:linear-gradient(135deg,#1dbf73,#19a463); color:#fff; padding:8px 20px; border-radius:25px; font-size:14px; font-weight:700; margin-bottom:20px; box-shadow:0 4px 15px rgba(29,191,115,0.3); animation:slideDown .6s ease-out; }
+        .hero-stats { display:none; gap:24px; justify-content:center; margin-top:50px; flex-wrap:wrap; animation:slideUp 1.4s ease-out; }
+        .hero-stat { text-align:center; padding:20px 30px; border:1px solid rgba(0,191,255,0.15); border-radius:12px; background:rgba(0,191,255,0.04); transition:all .3s; min-width:120px; }
+        .hero-stat:hover { border-color:var(--accent); background:rgba(0,191,255,0.08); transform:translateY(-5px); }
+        .hero-stat-number { font-family:'Orbitron',sans-serif; font-size:30px; font-weight:700; color:var(--accent); display:block; }
+        .hero-stat-label { font-size:12px; color:#777; margin-top:4px; display:block; }
+
+        /* SECTIONS */
+        .section { padding:100px 0; text-align:center; position:relative; }
+        .section-title { font-size:clamp(24px,4vw,38px); margin-bottom:15px; font-family:'Orbitron',sans-serif; color:#fff; }
+        [dir="rtl"] .section-title { font-family:'Cairo','Orbitron',sans-serif; }
+        .section-lead { color:#999; margin-bottom:50px; max-width:700px; margin-left:auto; margin-right:auto; font-size:clamp(14px,2vw,16px); line-height:1.7; }
+        .grid { display:grid; gap:26px; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); }
+        .card {
+            background:rgba(255,255,255,0.03); border:1px solid rgba(0,191,255,0.1);
+            padding:38px 28px; border-radius:15px;
+            transition:all .4s cubic-bezier(0.68,-0.55,0.265,1.55);
+            position:relative; overflow:hidden; text-align:left;
+        }
+        [dir="rtl"] .card { text-align:right; }
+        .card::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(0,191,255,0.07) 0%,transparent 70%); opacity:0; transition:opacity .4s; }
+        .card:hover::before { opacity:1; }
+        .card:hover { transform:translateY(-12px) scale(1.01); background:rgba(255,255,255,0.05); border-color:var(--accent); box-shadow:0 20px 50px rgba(0,191,255,0.14); }
+        .card h3 { font-family:'Orbitron',sans-serif; font-size:16px; color:#fff; margin-bottom:12px; line-height:1.4; }
+        [dir="rtl"] .card h3 { font-family:'Cairo','Orbitron',sans-serif; }
+        .card p { color:#aaa; font-size:14px; line-height:1.7; }
+        .icon-box { font-size:44px; color:var(--accent); margin-bottom:22px; transition:all .4s; display:block; }
+        .card:hover .icon-box { transform:scale(1.2) rotate(10deg); filter:drop-shadow(0 0 10px var(--accent)); }
+        .feature-icon { width:68px; height:68px; background:rgba(0,191,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:30px; color:var(--accent); transition:all .4s; }
+        .card:hover .feature-icon { background:rgba(0,191,255,0.2); transform:rotate(360deg) scale(1.1); box-shadow:0 0 20px rgba(0,191,255,0.5); }
+        .delivery-badge { display:inline-block; background:rgba(29,191,115,0.2); color:#1dbf73; padding:4px 12px; border-radius:15px; font-size:13px; font-weight:600; margin:10px 0; }
+        .popular-badge { background:var(--accent); color:#000; position:absolute; top:10px; right:-35px; transform:rotate(45deg); width:120px; font-size:11px; font-weight:800; padding:4px; text-align:center; animation:glow 2s infinite; }
+        [dir="rtl"] .popular-badge { right:auto; left:-35px; transform:rotate(-45deg); }
+        .service-features { list-style:none; margin:18px 0; }
+        .service-features li { padding:7px 0; color:#bbb; display:flex; align-items:center; font-size:14px; border-bottom:1px solid rgba(255,255,255,0.04); }
+        .service-features li:last-child { border-bottom:none; }
+        .service-features li i { color:var(--secondary-accent); margin-right:12px; min-width:16px; font-size:12px; }
+        [dir="rtl"] .service-features li i { margin-right:0; margin-left:12px; }
+
+        /* TESTİMONİALS */
+        .testimonial-grid { display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr)); margin-top:40px; }
+        .testimonial-card { background:rgba(255,255,255,0.03); padding:28px; border-radius:15px; border:1px solid rgba(0,191,255,0.1); text-align:left; position:relative; transition:all .4s; }
+        [dir="rtl"] .testimonial-card { text-align:right; }
+        .testimonial-card:hover { transform:translateY(-10px); border-color:var(--accent); box-shadow:0 10px 30px rgba(0,191,255,0.2); }
+        .quote-icon { font-size:28px; color:var(--accent); opacity:.2; position:absolute; top:18px; right:18px; }
+        [dir="rtl"] .quote-icon { right:auto; left:18px; }
+        .testimonial-text { font-style:italic; color:#bbb; margin-bottom:20px; line-height:1.7; font-size:14px; }
+        .testimonial-user { display:flex; align-items:center; }
+        .testimonial-avatar { width:44px; height:44px; background:linear-gradient(45deg,var(--accent),var(--secondary-accent)); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:14px; color:#fff; font-weight:bold; font-family:'Orbitron',sans-serif; flex-shrink:0; transition:all .4s; }
+        [dir="rtl"] .testimonial-avatar { margin-right:0; margin-left:14px; }
+        .testimonial-card:hover .testimonial-avatar { transform:scale(1.15) rotate(360deg); }
+        .testimonial-info h5 { color:#fff; font-size:15px; margin:0; }
+        .testimonial-info .stars { color:#ffa500; font-size:13px; }
+
+        /* BUTONLAR */
+        .btn { display:inline-block; padding:16px 34px; border-radius:8px; text-decoration:none; font-weight:700; transition:all .4s cubic-bezier(0.68,-0.55,0.265,1.55); cursor:pointer; border:none; text-align:center; position:relative; overflow:hidden; font-size:15px; }
+        .btn::before { content:''; position:absolute; top:50%; left:50%; width:0; height:0; border-radius:50%; background:rgba(255,255,255,0.2); transform:translate(-50%,-50%); transition:width .6s,height .6s; }
+        .btn:hover::before { width:300px; height:300px; }
+        .btn-primary { background:var(--secondary-accent); color:#fff; box-shadow:0 4px 15px rgba(255,69,0,0.3); animation:slideUp 1.2s ease-out; }
+        .btn-primary:hover { transform:translateY(-5px) scale(1.05); box-shadow:0 8px 25px rgba(255,69,0,0.5); }
+        .fiverr-btn { background:#1dbf73; color:#fff; width:100%; margin-top:15px; display:block; text-align:center; }
+        .fiverr-btn:hover { background:#19a463; transform:translateY(-3px); box-shadow:0 8px 20px rgba(29,191,115,0.4); }
+
+        /* FAQ */
+        .faq-container { max-width:860px; margin:0 auto; text-align:left; }
+        [dir="rtl"] .faq-container { text-align:right; }
+        .faq-item { background:rgba(255,255,255,0.02); margin-bottom:14px; padding:26px 28px; border-radius:12px; border-left:4px solid var(--accent); transition:all var(--transition-speed); }
+        [dir="rtl"] .faq-item { border-left:none; border-right:4px solid var(--accent); }
+        .faq-item:hover { background:rgba(255,255,255,0.04); border-left-width:8px; transform:translateX(8px); box-shadow:-5px 0 15px rgba(0,191,255,0.12); }
+        [dir="rtl"] .faq-item:hover { border-left-width:4px; border-right-width:8px; transform:translateX(-8px); box-shadow:5px 0 15px rgba(0,191,255,0.12); }
+        .faq-item h3 { color:#fff; margin-bottom:10px; font-family:'Orbitron',sans-serif; font-size:15px; transition:all var(--transition-speed); }
+        [dir="rtl"] .faq-item h3 { font-family:'Cairo','Orbitron',sans-serif; }
+        .faq-item:hover h3 { color:var(--accent); }
+        .faq-item p { font-size:14px; line-height:1.7; color:#aaa; }
+        .faq-item ul { margin:10px 0; padding-left:20px; }
+        [dir="rtl"] .faq-item ul { padding-left:0; padding-right:20px; }
+        .faq-item ul li { color:#aaa; margin:6px 0; line-height:1.6; font-size:14px; }
+
+        /* PORTFOLİO */
+        .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr)); gap:22px; }
+        .portfolio-item { height:260px; border-radius:14px; overflow:hidden; position:relative; border:1px solid rgba(255,255,255,0.07); transition:all .4s; }
+        .portfolio-item:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(0,191,255,0.22); border-color:var(--accent); }
+        .portfolio-item img { width:100%; height:100%; object-fit:cover; filter:grayscale(15%); transition:all .6s; }
+        .portfolio-item:hover img { filter:grayscale(0%); transform:scale(1.1); }
+        .portfolio-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.93),transparent); padding:22px 20px 18px; opacity:0; transform:translateY(12px); transition:all .4s; }
+        .portfolio-item:hover .portfolio-overlay { opacity:1; transform:translateY(0); }
+        .portfolio-overlay h3 { color:#fff; font-size:16px; margin-bottom:4px; font-family:'Orbitron',sans-serif; }
+        [dir="rtl"] .portfolio-overlay h3 { font-family:'Cairo','Orbitron',sans-serif; }
+        .portfolio-overlay p { color:#bbb; font-size:13px; }
+
+        /* FOOTER */
+        footer { background:#050510; padding:80px 0 40px; text-align:center; border-top:1px solid rgba(255,255,255,0.05); }
+        .footer-desc { margin-top:14px; color:#444; font-size:14px; }
+        .footer-links { margin:28px 0; }
+        .footer-links a { color:#666; text-decoration:none; margin:0 14px; font-size:14px; transition:all var(--transition-speed); position:relative; }
+        .footer-links a::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1px; background:var(--accent); transition:width var(--transition-speed); }
+        .footer-links a:hover { color:var(--accent); }
+        .footer-links a:hover::after { width:100%; }
+        .copyright { font-size:11px; color:#333; margin-top:18px; }
+
+        /* MISC */
+        .bg-dark-overlay { background:rgba(0,0,0,0.3); }
+        .bg-darker { background:#03030b; }
+        .accent-color { color:var(--accent); }
+        .text-note { margin-top:28px; color:#555; font-size:13px; }
+        .cta-card { max-width:750px; margin:0 auto; padding:70px 40px; text-align:center; }
+        .cta-desc { margin:18px auto 38px; color:#999; line-height:1.7; max-width:550px; font-size:15px; }
+        .cta-btn-wrapper { display:inline-block; min-width:260px; }
+        .cta-note { margin-top:18px; font-size:12px; color:#444; }
+
+        /* RESPONSIVE */
+        @media (min-width:900px) {
+            .hamburger-btn { display:none; }
+            .desktop-nav { display:flex; }
+            .desktop-lang { display:flex; }
+            .header-fiverr-btn { display:block; }
+            .hero-stats { display:flex; }
+            .grid { grid-template-columns:repeat(3,1fr); }
+            .testimonial-grid { grid-template-columns:repeat(3,1fr); }
+            .portfolio-grid { grid-template-columns:repeat(3,1fr); }
+            .section { padding:120px 0; }
+        }
+        @media (min-width:1200px) { .desktop-nav a { font-size:14px; padding:8px 14px; } .container { padding:0 40px; } }
+        @media (min-width:1440px) { :root { --max-width:1380px; } .hero-content h1 { font-size:80px; } }
+        @media (min-width:1920px) { :root { --max-width:1600px; } }
+        @media (min-width:600px) and (max-width:899px) { .grid { grid-template-columns:repeat(2,1fr); } .testimonial-grid { grid-template-columns:repeat(2,1fr); } }
+        @media (max-width:599px) { .section { padding:60px 0; } .hero { padding:80px 0 40px; } .cta-card { padding:40px 18px; } .card:hover { transform:translateY(-8px) scale(1); } }
+        @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner container">
+        <a href="#home" class="logo-link" aria-label="Ethem Diseño">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z" fill="rgba(0,191,255,0.05)" stroke="var(--accent)" stroke-width="3"/>
+                <path d="M35 30 H65 M35 50 H58 M35 70 H65 M35 30 V70" fill="none" stroke="var(--secondary-accent)" stroke-width="7" stroke-linecap="round"/>
+                <circle cx="72" cy="50" r="6" fill="var(--accent)"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+            </svg>
+            <div class="brand-text">ETHEM<span class="accent"> DISEÑO</span></div>
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#services" data-i18n="nav-services">Services</a>
+            <a href="#why" data-i18n="nav-why">Why Me?</a>
+            <a href="#testimonials" data-i18n="nav-testimonials">Testimonials</a>
+            <a href="#pricing" data-i18n="nav-pricing">Pricing</a>
+            <a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a>
+            <a href="#faq" data-i18n="nav-faq">FAQ</a>
+        </nav>
+        <div class="header-right">
+            <div class="desktop-lang" role="group" aria-label="Language selector">
+                <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+                <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+                <button class="lang-btn" data-lang="tr">🇹🇷 TR</button>
+                <button class="lang-btn" data-lang="ar">🇸🇦 AR</button>
+            </div>
+            <a href="https://www.fiverr.com/ethem_e" class="header-fiverr-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                <span data-i18n="hero-btn"> Fiverr</span>
+            </a>
+            <button id="hamburger" class="hamburger-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+    <nav class="menu-panel" aria-label="Mobile menu">
+        <div class="menu-header">
+            <svg style="width:35px;" viewBox="0 0 100 100" aria-hidden="true">
+                <path d="M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z" fill="none" stroke="var(--accent)" stroke-width="5"/>
+                <path d="M35 30 H65 M35 50 H58 M35 70 H65 M35 30 V70" fill="none" stroke="var(--secondary-accent)" stroke-width="10"/>
+            </svg>
+            <h2 class="menu-title" data-i18n="menu">MENU</h2>
+        </div>
+        <a href="#home" class="menu-link" data-i18n="nav-home">Home</a>
+        <a href="#services" class="menu-link" data-i18n="nav-services">Services</a>
+        <a href="#why" class="menu-link" data-i18n="nav-why">Why Me?</a>
+        <a href="#testimonials" class="menu-link" data-i18n="nav-testimonials">Testimonials</a>
+        <a href="#pricing" class="menu-link" data-i18n="nav-pricing">Pricing</a>
+        <a href="#portfolio" class="menu-link" data-i18n="nav-portfolio">Portfolio</a>
+        <a href="#faq" class="menu-link" data-i18n="nav-faq">FAQ</a>
+        <a href="#contact" class="menu-link" data-i18n="nav-contact">Contact</a>
+        <div class="lang-switcher">
+            <div class="lang-title"><i class="fa-solid fa-globe" aria-hidden="true"></i><span data-i18n="language">Language</span></div>
+            <div class="lang-options">
+                <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+                <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+                <button class="lang-btn" data-lang="tr">🇹🇷 TR</button>
+                <button class="lang-btn" data-lang="ar">🇸🇦 AR</button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <div class="fiverr-badge" data-i18n="badge">✓ Full Stack Developer | Turkey</div>
+        <h1>ETHEM<span class="accent-color"> DISEÑO</span></h1>
+        <p data-i18n="hero-desc">WordPress Expert, Shopify Stores & Custom Web Development. 90+ PageSpeed Score. Turkish native · English good · Spanish good.</p>
+        <a href="https://www.fiverr.com/ethem_e" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+            <span data-i18n="hero-btn"> View Fiverr Profile</span>
+        </a>
+        <div class="hero-stats">
+            <div class="hero-stat"><span class="hero-stat-number">90+</span><span class="hero-stat-label" data-i18n="stat1">PageSpeed Score</span></div>
+            <div class="hero-stat"><span class="hero-stat-number">4</span><span class="hero-stat-label" data-i18n="stat2">Languages</span></div>
+            <div class="hero-stat"><span class="hero-stat-number">∞</span><span class="hero-stat-label" data-i18n="stat3">Revisions</span></div>
+            <div class="hero-stat"><span class="hero-stat-number">4</span><span class="hero-stat-label" data-i18n="stat4">Global Markets</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="services-title">Professional Services</h2>
+        <p class="section-lead scroll-reveal" data-i18n="services-lead">High-performance web solutions with guaranteed quality.</p>
+        <div class="grid">
+            <article class="card scroll-reveal stagger-1">
+                <span class="icon-box" aria-hidden="true"><i class="fab fa-wordpress"></i></span>
+                <h3 data-i18n="service1-title">WordPress Expert Development</h3>
+                <p data-i18n="service1-desc">High-performance WordPress sites with 90+ PageSpeed. Elementor Pro, responsive design, global scaling ready.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service1-feat1">90+ PageSpeed Score</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service1-feat2">Elementor Pro Integration</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service1-feat3">Responsive Design</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service1-feat4">SEO Optimized</span></li>
+                </ul>
+            </article>
+            <article class="card scroll-reveal stagger-2">
+                <span class="icon-box" aria-hidden="true"><i class="fab fa-shopify"></i></span>
+                <h3 data-i18n="service2-title">Shopify Expert Stores</h3>
+                <p data-i18n="service2-desc">High-converting global Shopify stores with custom Liquid theme, multi-region setup, logistics & tax integration.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service2-feat1">Custom Liquid Theme</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service2-feat2">USA/Dubai/Chile/TR Setup</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service2-feat3">Local Logistics & Tax</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service2-feat4">Unlimited Revisions</span></li>
+                </ul>
+            </article>
+            <article class="card scroll-reveal stagger-3">
+                <span class="icon-box" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+                <h3 data-i18n="service3-title">Custom Web Engineering</h3>
+                <p data-i18n="service3-desc">Advanced custom systems built from scratch. Multi-language, maximum security & global scaling.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service3-feat1">HTML, CSS, JavaScript, PHP</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service3-feat2">Custom Architecture</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service3-feat3">Robust Security</span></li>
+                    <li><i class="fa-solid fa-check"></i><span data-i18n="service3-feat4">Global Markets Ready</span></li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="section bg-dark-overlay">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="why-title">Why Choose Me?</h2>
+        <p class="section-lead scroll-reveal" data-i18n="why-lead">Advantages that set me apart on Fiverr.</p>
+        <div class="grid">
+            <article class="card scroll-reveal stagger-1" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div><h3 data-i18n="why1-title">90+ PageSpeed Guaranteed</h3><p data-i18n="why1-desc">Clean architecture for instant loading. No heavy apps, pure performance.</p></article>
+            <article class="card scroll-reveal stagger-2" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-globe"></i></div><h3 data-i18n="why2-title">Global Market Mastery</h3><p data-i18n="why2-desc">Multi-region setup for USA, Dubai, Chile, Turkey with local logistics and tax compliance.</p></article>
+            <article class="card scroll-reveal stagger-3" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div><h3 data-i18n="why3-title">Maximum Security</h3><p data-i18n="why3-desc">Enterprise-level protection against vulnerabilities. Robust and secure custom-built systems.</p></article>
+            <article class="card scroll-reveal stagger-4" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-language"></i></div><h3 data-i18n="why4-title">Multilingual Communication</h3><p data-i18n="why4-desc">Turkish native (perfect). English good — we get the job done. Spanish good — we get the job done.</p></article>
+            <article class="card scroll-reveal stagger-5" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-rocket"></i></div><h3 data-i18n="why5-title">Scale-Ready Architecture</h3><p data-i18n="why5-desc">Built to handle thousands of products and massive traffic from day one.</p></article>
+            <article class="card scroll-reveal stagger-6" style="text-align:center"><div class="feature-icon"><i class="fa-solid fa-infinity"></i></div><h3 data-i18n="why6-title">Unlimited Revisions (Premium)</h3><p data-i18n="why6-desc">Absolute perfection guaranteed. I don't finish until you're 100% satisfied.</p></article>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="section">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="test-title">Client Testimonials</h2>
+        <p class="section-lead scroll-reveal" data-i18n="test-lead">Real feedback from completed Fiverr projects.</p>
+        <div class="testimonial-grid">
+            <article class="testimonial-card scroll-reveal stagger-1">
+                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                <p class="testimonial-text" data-i18n="test1-text">"Perfect WordPress site. 90+ PageSpeed and loads instantly. Modern design that converts visitors to customers."</p>
+                <div class="testimonial-user"><div class="testimonial-avatar">J</div><div class="testimonial-info"><h5>John D.</h5><span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+            </article>
+            <article class="testimonial-card scroll-reveal stagger-2">
+                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                <p class="testimonial-text" data-i18n="test2-text">"Incredible Shopify store for global market. Perfect setup for USA, Dubai, and Chile with all logistics integrated."</p>
+                <div class="testimonial-user"><div class="testimonial-avatar">S</div><div class="testimonial-info"><h5>Sarah M.</h5><span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+            </article>
+            <article class="testimonial-card scroll-reveal stagger-3">
+                <i class="fa-solid fa-quote-right quote-icon" aria-hidden="true"></i>
+                <p class="testimonial-text" data-i18n="test3-text">"Outstanding custom website. Clean code, good communication, and delivered ahead of schedule."</p>
+                <div class="testimonial-user"><div class="testimonial-avatar">A</div><div class="testimonial-info"><h5>Ahmed K.</h5><span class="stars">⭐⭐⭐⭐⭐</span></div></div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="section bg-dark-overlay">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="pricing-title">Service Packages</h2>
+        <p class="section-lead scroll-reveal" data-i18n="pricing-lead">Professional web solutions. Contact for custom pricing.</p>
+        <div class="grid">
+            <article class="card scroll-reveal stagger-1">
+                <h3 data-i18n="plan1-title">WordPress Expert</h3>
+                <div class="delivery-badge" data-i18n="plan1-delivery">⚡ Contact for Pricing</div>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat1">High-performance WordPress site</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat2">90+ PageSpeed Score</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat3">Elementor Pro & Responsive</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat4">Multi-language ready</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat5">Global scaling support</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="plan1-feat6">Unlimited revisions</span></li>
+                </ul>
+                <a href="https://www.fiverr.com/ethem_e" class="btn fiverr-btn" target="_blank" rel="noopener noreferrer"><span data-i18n="order-btn">Contact on Fiverr</span></a>
+            </article>
+            <article class="card scroll-reveal stagger-2" style="border:2px solid var(--accent);background:rgba(0,191,255,0.04)">
+                <div class="popular-badge"><span data-i18n="popular">MOST POPULAR</span></div>
+                <h3 data-i18n="plan2-title">Shopify Expert Empire</h3>
+                <div class="delivery-badge" data-i18n="plan2-delivery">⚡ Contact for Pricing</div>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat1">Custom Liquid theme</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat2">90+ Speed optimization</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat3">USA/Dubai/Chile/TR setup</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat4">Local logistics & tax</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat5">Seamless payment gateways</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat6">Unlimited revisions</span></li>
+                    <li><i class="fa-solid fa-star"></i><span data-i18n="plan2-feat7">Scale to handle thousands</span></li>
+                </ul>
+                <a href="https://www.fiverr.com/ethem_e" class="btn fiverr-btn" target="_blank" rel="noopener noreferrer"><span data-i18n="order-btn">Contact on Fiverr</span></a>
+            </article>
+            <article class="card scroll-reveal stagger-3">
+                <h3 data-i18n="plan3-title">Enterprise Custom Solution</h3>
+                <div class="delivery-badge" data-i18n="plan3-delivery">⚡ Contact for Pricing</div>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat1">Advanced custom coding</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat2">Multi-language architecture</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat3">Maximum security</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat4">Global scaling ready</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat5">Custom integrations</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat6">Unlimited revisions</span></li>
+                    <li><i class="fa-solid fa-crown"></i><span data-i18n="plan3-feat7">Priority support</span></li>
+                </ul>
+                <a href="https://www.fiverr.com/ethem_e" class="btn fiverr-btn" target="_blank" rel="noopener noreferrer"><span data-i18n="contact-btn">Contact on Fiverr</span></a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="section bg-darker">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="portfolio-title">Project Portfolio</h2>
+        <p class="section-lead scroll-reveal" data-i18n="portfolio-lead">Examples of work done for Fiverr clients.</p>
+        <div class="portfolio-grid">
+            <article class="portfolio-item scroll-reveal stagger-1">
+                <picture>
+                    <source srcset="https://images.pexels.com/photos/34804001/pexels-photo-34804001.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+                    <img src="https://images.pexels.com/photos/34804001/pexels-photo-34804001.jpeg?auto=compress&cs=tinysrgb&w=800" alt="WordPress Expert Site" loading="lazy" decoding="async">
+                </picture>
+                <div class="portfolio-overlay"><h3 data-i18n="port1-title">WordPress Expert Site</h3><p data-i18n="port1-desc">High-performance WordPress with 90+ PageSpeed</p></div>
+            </article>
+            <article class="portfolio-item scroll-reveal stagger-2">
+                <picture>
+                    <source srcset="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Global Shopify Store" loading="lazy" decoding="async">
+                </picture>
+                <div class="portfolio-overlay"><h3 data-i18n="port2-title">Global Shopify Store</h3><p data-i18n="port2-desc">Multi-region e-commerce with logistics</p></div>
+            </article>
+            <article class="portfolio-item scroll-reveal stagger-3">
+                <picture>
+                    <source srcset="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=800&fm=webp" type="image/webp">
+                    <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Custom Web Solution" loading="lazy" decoding="async">
+                </picture>
+                <div class="portfolio-overlay"><h3 data-i18n="port3-title">Custom Web Solution</h3><p data-i18n="port3-desc">Enterprise custom-coded system</p></div>
+            </article>
+        </div>
+        <p class="text-note scroll-reveal" data-i18n="portfolio-note">* Real projects. Sensitive data protected by confidentiality.</p>
+    </div>
+</section>
+
+<section id="faq" class="section">
+    <div class="container">
+        <h2 class="section-title scroll-reveal" data-i18n="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <article class="faq-item scroll-reveal stagger-1">
+                <h3 data-i18n="faq1-q">What's included in your services?</h3>
+                <p data-i18n="faq1-intro">Every package includes:</p>
+                <ul>
+                    <li data-i18n="faq1-a1">90+ PageSpeed Score (no heavy apps)</li>
+                    <li data-i18n="faq1-a2">Clean, optimized code</li>
+                    <li data-i18n="faq1-a3">Responsive design (mobile, tablet, desktop)</li>
+                    <li data-i18n="faq1-a4">SEO optimization</li>
+                    <li data-i18n="faq1-a5">Full source files</li>
+                    <li data-i18n="faq1-a6">Complete project ownership</li>
+                </ul>
+            </article>
+            <article class="faq-item scroll-reveal stagger-2">
+                <h3 data-i18n="faq2-q">How does the process work?</h3>
+                <p data-i18n="faq2-intro">Very simple:</p>
+                <ul>
+                    <li data-i18n="faq2-a1">1. Contact me on Fiverr</li>
+                    <li data-i18n="faq2-a2">2. Discuss your specific requirements</li>
+                    <li data-i18n="faq2-a3">3. I develop and share live demo</li>
+                    <li data-i18n="faq2-a4">4. Unlimited revisions for perfection</li>
+                    <li data-i18n="faq2-a5">5. Final delivery with documentation</li>
+                </ul>
+            </article>
+            <article class="faq-item scroll-reveal stagger-3"><h3 data-i18n="faq3-q">What about delivery time?</h3><p data-i18n="faq3-a">Delivery time varies by project complexity. WordPress (2-14 days), Shopify (10 days), Custom (21 days). Always delivered on time.</p></article>
+            <article class="faq-item scroll-reveal stagger-4"><h3 data-i18n="faq4-q">Do you offer support after delivery?</h3><p data-i18n="faq4-a">Yes. All plans include post-delivery support. Premium packages include extended priority support.</p></article>
+            <article class="faq-item scroll-reveal stagger-5"><h3 data-i18n="faq5-q">Can you set up for global markets?</h3><p data-i18n="faq5-a">Absolutely. I specialize in USA, Dubai, Chile, and Turkey setups with local logistics, tax compliance, and payment gateways.</p></article>
+            <article class="faq-item scroll-reveal stagger-6"><h3 data-i18n="faq6-q">What languages do you speak?</h3><p data-i18n="faq6-a">Turkish is my native language — perfect communication. English is good level — we get the job done. Spanish is good level — we get the job done.</p></article>
+            <article class="faq-item scroll-reveal"><h3 data-i18n="faq7-q">How do you guarantee 90+ PageSpeed?</h3><p data-i18n="faq7-a">I use clean code, optimized images, and no heavy apps. Pure performance architecture from the start.</p></article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <article class="card cta-card scroll-reveal" style="text-align:center">
+            <h2 class="section-title" data-i18n="cta-title">Ready to Build Your Success?</h2>
+            <p class="cta-desc" data-i18n="cta-desc">Contact me on Fiverr and get a personalized proposal within 24 hours. Secure transaction protected by Fiverr.</p>
+            <a href="https://www.fiverr.com/ethem_e" class="btn btn-primary cta-btn-wrapper" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                <span data-i18n="cta-btn"> Start Chat on Fiverr</span>
+            </a>
+            <p class="cta-note" data-i18n="cta-note">Secure transaction protected by Fiverr.</p>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <svg style="width:50px;margin-bottom:18px" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 5 L90 27.5 L90 72.5 L50 95 L10 72.5 L10 27.5 Z" fill="none" stroke="var(--accent)" stroke-width="4"/>
+            <path d="M35 30 H65 M35 50 H58 M35 70 H65 M35 30 V70" fill="none" stroke="var(--secondary-accent)" stroke-width="8"/>
+        </svg>
+        <div class="brand-text">ETHEM<span class="accent"> DISEÑO</span></div>
+        <p class="footer-desc" data-i18n="footer-desc">Full Stack Developer | Multilingual Web Solutions</p>
+        <nav class="footer-links">
+            <a href="https://www.fiverr.com/terms_of_service" target="_blank" rel="noopener noreferrer" data-i18n="footer-terms">Terms of Service</a>
+            <a href="#home" data-i18n="nav-home">Home</a>
+            <a href="#services" data-i18n="nav-services">Services</a>
+            <a href="https://www.fiverr.com/ethem_e" target="_blank" rel="noopener noreferrer" data-i18n="footer-profile">Fiverr Profile</a>
+        </nav>
+        <p class="copyright">© <span id="currentYear"></span> Ethem Diseño. <span data-i18n="footer-rights">All rights reserved.</span></p>
+    </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+const CONFIG={HEADER_OFFSET:70,SUPPORTED_LANGUAGES:['es','en','tr','ar'],DEFAULT_LANGUAGE:'en',STORAGE_KEY:'selectedLanguage'};
+const RTL_LANGS=['ar'];
+const T={
+es:{'menu':'MENÚ','language':'Idioma','nav-home':'Inicio','nav-services':'Servicios','nav-why':'¿Por Qué Yo?','nav-testimonials':'Testimonios','nav-pricing':'Precios','nav-portfolio':'Portafolio','nav-faq':'Preguntas','nav-contact':'Contacto','badge':'✓ Desarrollador Full Stack | Turquía','hero-desc':'Experto WordPress, Tiendas Shopify y Desarrollo Web Personalizado. PageSpeed 90+. Turco nativo · Inglés bueno · Español bueno.','hero-btn':'Ver Perfil Fiverr','stat1':'Puntuación PageSpeed','stat2':'Idiomas','stat3':'Revisiones','stat4':'Mercados Globales','services-title':'Servicios Profesionales','services-lead':'Soluciones web de alto rendimiento con calidad garantizada.','service1-title':'Desarrollo Experto WordPress','service1-desc':'Sitios WordPress de alto rendimiento con PageSpeed 90+. Elementor Pro, diseño responsive, escalabilidad global.','service1-feat1':'Puntuación PageSpeed 90+','service1-feat2':'Integración Elementor Pro','service1-feat3':'Diseño Responsive','service1-feat4':'Optimizado SEO','service2-title':'Tiendas Shopify Expertas','service2-desc':'Tiendas Shopify globales con tema Liquid personalizado, configuración multi-región, logística e impuestos.','service2-feat1':'Tema Liquid Personalizado','service2-feat2':'Configuración USA/Dubai/Chile/TR','service2-feat3':'Logística e Impuestos Locales','service2-feat4':'Revisiones Ilimitadas','service3-title':'Ingeniería Web Personalizada','service3-desc':'Sistemas personalizados avanzados desde cero. Multi-idioma, máxima seguridad y escalabilidad global.','service3-feat1':'HTML, CSS, JavaScript, PHP','service3-feat2':'Arquitectura Personalizada','service3-feat3':'Seguridad Robusta','service3-feat4':'Listo para Mercados Globales','why-title':'¿Por Qué Elegirme?','why-lead':'Ventajas que me destacan en Fiverr.','why1-title':'PageSpeed 90+ Garantizado','why1-desc':'Arquitectura limpia para carga instantánea. Sin apps pesadas, rendimiento puro.','why2-title':'Dominio del Mercado Global','why2-desc':'Configuración multi-región para USA, Dubai, Chile, Turquía con logística local y cumplimiento fiscal.','why3-title':'Máxima Seguridad','why3-desc':'Protección nivel empresarial contra vulnerabilidades. Sistemas personalizados robustos y seguros.','why4-title':'Comunicación Multilingüe','why4-desc':'Turco nativo (perfecto). Inglés bueno — sacamos el proyecto adelante. Español bueno — sacamos el proyecto adelante.','why5-title':'Arquitectura Lista para Escalar','why5-desc':'Construido para manejar miles de productos y tráfico masivo desde el primer día.','why6-title':'Revisiones Ilimitadas (Premium)','why6-desc':'Perfección absoluta garantizada. No termino hasta que estés 100% satisfecho.','test-title':'Testimonios de Clientes','test-lead':'Comentarios reales de proyectos completados en Fiverr.','test1-text':'"Sitio WordPress perfecto. PageSpeed 90+ y carga instantánea. Diseño moderno que convierte visitantes en clientes."','test2-text':'"Increíble tienda Shopify para mercado global. Configuración perfecta con toda la logística integrada."','test3-text':'"Sitio web personalizado excepcional. Código limpio, buena comunicación y entregado antes de tiempo."','pricing-title':'Paquetes de Servicio','pricing-lead':'Soluciones web profesionales. Contacta para precios personalizados.','plan1-title':'WordPress Experto','plan1-delivery':'⚡ Contacta para Presupuesto','plan1-feat1':'Sitio WordPress de alto rendimiento','plan1-feat2':'Puntuación PageSpeed 90+','plan1-feat3':'Elementor Pro y Responsive','plan1-feat4':'Listo para multi-idioma','plan1-feat5':'Soporte escalabilidad global','plan1-feat6':'Revisiones ilimitadas','popular':'MÁS POPULAR','plan2-title':'Imperio Shopify Experto','plan2-delivery':'⚡ Contacta para Presupuesto','plan2-feat1':'Tema Liquid personalizado','plan2-feat2':'Optimización Velocidad 90+','plan2-feat3':'Configuración USA/Dubai/Chile/TR','plan2-feat4':'Logística e impuestos locales','plan2-feat5':'Pasarelas de pago integradas','plan2-feat6':'Revisiones ilimitadas','plan2-feat7':'Escala para manejar miles','plan3-title':'Solución Personalizada Empresarial','plan3-delivery':'⚡ Contacta para Presupuesto','plan3-feat1':'Codificación personalizada avanzada','plan3-feat2':'Arquitectura multi-idioma','plan3-feat3':'Máxima seguridad','plan3-feat4':'Listo para escalabilidad global','plan3-feat5':'Integraciones personalizadas','plan3-feat6':'Revisiones ilimitadas','plan3-feat7':'Soporte prioritario','order-btn':'Contactar en Fiverr','contact-btn':'Contactar en Fiverr','portfolio-title':'Portafolio de Proyectos','portfolio-lead':'Ejemplos de trabajos realizados para clientes de Fiverr.','port1-title':'Sitio WordPress Experto','port1-desc':'WordPress de alto rendimiento con PageSpeed 90+','port2-title':'Tienda Shopify Global','port2-desc':'E-commerce multi-región con logística','port3-title':'Solución Web Personalizada','port3-desc':'Sistema personalizado nivel empresarial','portfolio-note':'* Proyectos reales. Datos sensibles protegidos por confidencialidad.','faq-title':'Preguntas Frecuentes','faq1-q':'¿Qué incluyen tus servicios?','faq1-intro':'Cada paquete incluye:','faq1-a1':'Puntuación PageSpeed 90+ (sin apps pesadas)','faq1-a2':'Código limpio y optimizado','faq1-a3':'Diseño responsive (móvil, tablet, desktop)','faq1-a4':'Optimización SEO','faq1-a5':'Archivos fuente completos','faq1-a6':'Propiedad completa del proyecto','faq2-q':'¿Cómo funciona el proceso?','faq2-intro':'Muy simple:','faq2-a1':'1. Contáctame en Fiverr','faq2-a2':'2. Discutimos tus requisitos específicos','faq2-a3':'3. Desarrollo y comparto demo en vivo','faq2-a4':'4. Revisiones ilimitadas para perfección','faq2-a5':'5. Entrega final con documentación','faq3-q':'¿Cuál es el tiempo de entrega?','faq3-a':'El tiempo varía según complejidad. WordPress (2-14 días), Shopify (10 días), Personalizado (21 días). Siempre a tiempo.','faq4-q':'¿Ofreces soporte después de la entrega?','faq4-a':'Sí. Todos los planes incluyen soporte post-entrega. Paquetes premium incluyen soporte prioritario extendido.','faq5-q':'¿Puedes configurar para mercados globales?','faq5-a':'Absolutamente. Me especializo en USA, Dubai, Chile y Turquía con logística local, cumplimiento fiscal y pasarelas de pago.','faq6-q':'¿Qué idiomas hablas?','faq6-a':'Turco es mi idioma nativo — comunicación perfecta. Inglés a buen nivel — sacamos el proyecto adelante. Español a buen nivel — sacamos el proyecto adelante.','faq7-q':'¿Cómo garantizas PageSpeed 90+?','faq7-a':'Uso código limpio, imágenes optimizadas y sin apps pesadas. Arquitectura de rendimiento puro desde el inicio.','cta-title':'¿Listo para Construir tu Éxito?','cta-desc':'Contáctame en Fiverr y recibe una propuesta personalizada en 24 horas. Transacción segura protegida por Fiverr.','cta-btn':'Iniciar Chat en Fiverr','cta-note':'Transacción segura protegida por Fiverr.','footer-desc':'Desarrollador Full Stack | Soluciones Web Multilingües','footer-terms':'Términos de Servicio','footer-profile':'Perfil Fiverr','footer-rights':'Todos los derechos reservados.'},
+en:{'menu':'MENU','language':'Language','nav-home':'Home','nav-services':'Services','nav-why':'Why Me?','nav-testimonials':'Testimonials','nav-pricing':'Pricing','nav-portfolio':'Portfolio','nav-faq':'FAQ','nav-contact':'Contact','badge':'✓ Full Stack Developer | Turkey','hero-desc':'WordPress Expert, Shopify Stores & Custom Web Development. 90+ PageSpeed Score. Turkish native · English good · Spanish good.','hero-btn':'View Fiverr Profile','stat1':'PageSpeed Score','stat2':'Languages','stat3':'Revisions','stat4':'Global Markets','services-title':'Professional Services','services-lead':'High-performance web solutions with guaranteed quality.','service1-title':'WordPress Expert Development','service1-desc':'High-performance WordPress sites with 90+ PageSpeed. Elementor Pro, responsive design, global scaling ready.','service1-feat1':'90+ PageSpeed Score','service1-feat2':'Elementor Pro Integration','service1-feat3':'Responsive Design','service1-feat4':'SEO Optimized','service2-title':'Shopify Expert Stores','service2-desc':'High-converting global Shopify stores with custom Liquid theme, multi-region setup, logistics & tax integration.','service2-feat1':'Custom Liquid Theme','service2-feat2':'USA/Dubai/Chile/TR Setup','service2-feat3':'Local Logistics & Tax','service2-feat4':'Unlimited Revisions','service3-title':'Custom Web Engineering','service3-desc':'Advanced custom systems built from scratch. Multi-language, maximum security & global scaling.','service3-feat1':'HTML, CSS, JavaScript, PHP','service3-feat2':'Custom Architecture','service3-feat3':'Robust Security','service3-feat4':'Global Markets Ready','why-title':'Why Choose Me?','why-lead':'Advantages that set me apart on Fiverr.','why1-title':'90+ PageSpeed Guaranteed','why1-desc':'Clean architecture for instant loading. No heavy apps, pure performance.','why2-title':'Global Market Mastery','why2-desc':'Multi-region setup for USA, Dubai, Chile, Turkey with local logistics and tax compliance.','why3-title':'Maximum Security','why3-desc':'Enterprise-level protection against vulnerabilities. Robust and secure custom-built systems.','why4-title':'Multilingual Communication','why4-desc':'Turkish native (perfect). English good — we get the job done. Spanish good — we get the job done.','why5-title':'Scale-Ready Architecture','why5-desc':'Built to handle thousands of products and massive traffic from day one.','why6-title':'Unlimited Revisions (Premium)','why6-desc':"Absolute perfection guaranteed. I don't finish until you're 100% satisfied.",'test-title':'Client Testimonials','test-lead':'Real feedback from completed Fiverr projects.','test1-text':'"Perfect WordPress site. 90+ PageSpeed and loads instantly. Modern design that converts visitors to customers."','test2-text':'"Incredible Shopify store for global market. Perfect setup for USA, Dubai, and Chile with all logistics integrated."','test3-text':'"Outstanding custom website. Clean code, good communication, and delivered ahead of schedule."','pricing-title':'Service Packages','pricing-lead':'Professional web solutions. Contact for custom pricing.','plan1-title':'WordPress Expert','plan1-delivery':'⚡ Contact for Pricing','plan1-feat1':'High-performance WordPress site','plan1-feat2':'90+ PageSpeed Score','plan1-feat3':'Elementor Pro & Responsive','plan1-feat4':'Multi-language ready','plan1-feat5':'Global scaling support','plan1-feat6':'Unlimited revisions','popular':'MOST POPULAR','plan2-title':'Shopify Expert Empire','plan2-delivery':'⚡ Contact for Pricing','plan2-feat1':'Custom Liquid theme','plan2-feat2':'90+ Speed optimization','plan2-feat3':'USA/Dubai/Chile/TR setup','plan2-feat4':'Local logistics & tax','plan2-feat5':'Seamless payment gateways','plan2-feat6':'Unlimited revisions','plan2-feat7':'Scale to handle thousands','plan3-title':'Enterprise Custom Solution','plan3-delivery':'⚡ Contact for Pricing','plan3-feat1':'Advanced custom coding','plan3-feat2':'Multi-language architecture','plan3-feat3':'Maximum security','plan3-feat4':'Global scaling ready','plan3-feat5':'Custom integrations','plan3-feat6':'Unlimited revisions','plan3-feat7':'Priority support','order-btn':'Contact on Fiverr','contact-btn':'Contact on Fiverr','portfolio-title':'Project Portfolio','portfolio-lead':'Examples of work done for Fiverr clients.','port1-title':'WordPress Expert Site','port1-desc':'High-performance WordPress with 90+ PageSpeed','port2-title':'Global Shopify Store','port2-desc':'Multi-region e-commerce with logistics','port3-title':'Custom Web Solution','port3-desc':'Enterprise custom-coded system','portfolio-note':'* Real projects. Sensitive data protected by confidentiality.','faq-title':'Frequently Asked Questions','faq1-q':"What's included in your services?",'faq1-intro':'Every package includes:','faq1-a1':'90+ PageSpeed Score (no heavy apps)','faq1-a2':'Clean, optimized code','faq1-a3':'Responsive design (mobile, tablet, desktop)','faq1-a4':'SEO optimization','faq1-a5':'Full source files','faq1-a6':'Complete project ownership','faq2-q':'How does the process work?','faq2-intro':'Very simple:','faq2-a1':'1. Contact me on Fiverr','faq2-a2':'2. Discuss your specific requirements','faq2-a3':'3. I develop and share live demo','faq2-a4':'4. Unlimited revisions for perfection','faq2-a5':'5. Final delivery with documentation','faq3-q':'What about delivery time?','faq3-a':'Delivery time varies by project complexity. WordPress (2-14 days), Shopify (10 days), Custom (21 days). Always delivered on time.','faq4-q':'Do you offer support after delivery?','faq4-a':'Yes. All plans include post-delivery support. Premium packages include extended priority support.','faq5-q':'Can you set up for global markets?','faq5-a':'Absolutely. I specialize in USA, Dubai, Chile, and Turkey setups with local logistics, tax compliance, and payment gateways.','faq6-q':'What languages do you speak?','faq6-a':'Turkish is my native language — perfect communication. English is good level — we get the job done. Spanish is good level — we get the job done.','faq7-q':'How do you guarantee 90+ PageSpeed?','faq7-a':'I use clean code, optimized images, and no heavy apps. Pure performance architecture from the start.','cta-title':'Ready to Build Your Success?','cta-desc':'Contact me on Fiverr and get a personalized proposal within 24 hours. Secure transaction protected by Fiverr.','cta-btn':'Start Chat on Fiverr','cta-note':'Secure transaction protected by Fiverr.','footer-desc':'Full Stack Developer | Multilingual Web Solutions','footer-terms':'Terms of Service','footer-profile':'Fiverr Profile','footer-rights':'All rights reserved.'},
+tr:{'menu':'MENÜ','language':'Dil','nav-home':'Ana Sayfa','nav-services':'Hizmetler','nav-why':'Neden Ben?','nav-testimonials':'Referanslar','nav-pricing':'Fiyatlandırma','nav-portfolio':'Portföy','nav-faq':'SSS','nav-contact':'İletişim','badge':'✓ Full Stack Developer | Türkiye','hero-desc':'WordPress Uzmanı, Shopify Mağazaları ve Özel Web Geliştirme. 90+ PageSpeed Puanı. Türkçe anadil · İngilizce iyi · İspanyolca iyi.','hero-btn':'Fiverr Profilini Gör','stat1':'PageSpeed Puanı','stat2':'Dil','stat3':'Revizyon','stat4':'Global Pazar','services-title':'Profesyonel Hizmetler','services-lead':'Garantili kalite ile yüksek performanslı web çözümleri.','service1-title':'WordPress Uzman Geliştirme','service1-desc':'90+ PageSpeed ile yüksek performanslı WordPress siteleri. Elementor Pro, responsive tasarım, global ölçeklendirme hazır.','service1-feat1':'90+ PageSpeed Puanı','service1-feat2':'Elementor Pro Entegrasyonu','service1-feat3':'Responsive Tasarım','service1-feat4':'SEO Optimize','service2-title':'Shopify Uzman Mağazaları','service2-desc':'Özel Liquid tema, çok bölgeli kurulum, lojistik ve vergi entegrasyonu ile yüksek dönüşümlü global Shopify mağazaları.','service2-feat1':'Özel Liquid Tema','service2-feat2':'ABD/Dubai/Şili/TR Kurulum','service2-feat3':'Yerel Lojistik ve Vergi','service2-feat4':'Sınırsız Revizyon','service3-title':'Özel Web Mühendisliği','service3-desc':'Sıfırdan geliştirilmiş gelişmiş özel sistemler. Çok dilli, maksimum güvenlik ve global ölçeklendirme.','service3-feat1':'HTML, CSS, JavaScript, PHP','service3-feat2':'Özel Mimari','service3-feat3':'Sağlam Güvenlik','service3-feat4':'Global Pazarlara Hazır','why-title':'Neden Beni Seçmelisiniz?','why-lead':"Fiverr'da beni öne çıkaran avantajlar.",'why1-title':'90+ PageSpeed Garantili','why1-desc':'Anında yükleme için temiz mimari. Ağır uygulama yok, saf performans.','why2-title':'Global Pazar Hakimiyeti','why2-desc':'ABD, Dubai, Şili, Türkiye için yerel lojistik ve vergi uyumu ile çok bölgeli kurulum.','why3-title':'Maksimum Güvenlik','why3-desc':'Güvenlik açıklarına karşı kurumsal düzeyde koruma. Sağlam ve güvenli özel sistemler.','why4-title':'Çok Dilli İletişim','why4-desc':'Türkçe anadil (mükemmel). İngilizce iyi seviye — projeyi hallederiz. İspanyolca iyi seviye — projeyi hallederiz.','why5-title':'Ölçeklendirmeye Hazır Mimari','why5-desc':'İlk günden binlerce ürün ve büyük trafiği kaldıracak şekilde inşa edilmiş.','why6-title':'Sınırsız Revizyon (Premium)','why6-desc':'Mutlak mükemmellik garantili. %100 memnun olana kadar bitirmem.','test-title':'Müşteri Referansları','test-lead':'Tamamlanan Fiverr projelerinden gerçek geri bildirimler.','test1-text':'"Mükemmel WordPress sitesi. 90+ PageSpeed ve anında yükleniyor. Ziyaretçileri müşteriye dönüştüren modern tasarım."','test2-text':'"Global pazar için inanılmaz Shopify mağazası. Tüm lojistik entegre edilmiş mükemmel kurulum."','test3-text':'"Olağanüstü özel web sitesi. Temiz kod, iyi iletişim ve programdan önce teslim edildi."','pricing-title':'Hizmet Paketleri','pricing-lead':'Profesyonel web çözümleri. Özel fiyatlandırma için iletişime geçin.','plan1-title':'WordPress Uzmanı','plan1-delivery':'⚡ Fiyat İçin İletişime Geçin','plan1-feat1':'Yüksek performanslı WordPress sitesi','plan1-feat2':'90+ PageSpeed Puanı','plan1-feat3':'Elementor Pro ve Responsive','plan1-feat4':'Çok dilli hazır','plan1-feat5':'Global ölçeklendirme desteği','plan1-feat6':'Sınırsız revizyon','popular':'EN POPÜLER','plan2-title':'Shopify Uzman İmparatorluğu','plan2-delivery':'⚡ Fiyat İçin İletişime Geçin','plan2-feat1':'Özel Liquid teması','plan2-feat2':'90+ Hız optimizasyonu','plan2-feat3':'ABD/Dubai/Şili/TR kurulum','plan2-feat4':'Yerel lojistik ve vergi','plan2-feat5':'Sorunsuz ödeme ağ geçitleri','plan2-feat6':'Sınırsız revizyonlar','plan2-feat7':'Binlerce ürünü kaldıracak ölçekte','plan3-title':'Kurumsal Özel Çözüm','plan3-delivery':'⚡ Fiyat İçin İletişime Geçin','plan3-feat1':'Gelişmiş özel kodlama','plan3-feat2':'Çok dilli mimari','plan3-feat3':'Maksimum güvenlik','plan3-feat4':'Global ölçeklendirmeye hazır','plan3-feat5':'Özel entegrasyonlar','plan3-feat6':'Sınırsız revizyonlar','plan3-feat7':'Öncelikli destek','order-btn':"Fiverr'da İletişime Geç",'contact-btn':"Fiverr'da İletişime Geç",'portfolio-title':'Proje Portföyü','portfolio-lead':'Fiverr müşterileri için yapılan işlerden örnekler.','port1-title':'WordPress Uzman Sitesi','port1-desc':'90+ PageSpeed ile yüksek performanslı WordPress','port2-title':'Global Shopify Mağazası','port2-desc':'Lojistik ile çok bölgeli e-ticaret','port3-title':'Özel Web Çözümü','port3-desc':'Kurumsal özel kodlanmış sistem','portfolio-note':'* Gerçek projeler. Hassas veriler gizlilik ile korunmuştur.','faq-title':'Sık Sorulan Sorular','faq1-q':'Hizmetleriniz neleri içeriyor?','faq1-intro':'Her paket şunları içerir:','faq1-a1':'90+ PageSpeed Puanı (ağır uygulama yok)','faq1-a2':'Temiz, optimize edilmiş kod','faq1-a3':'Responsive tasarım (mobil, tablet, masaüstü)','faq1-a4':'SEO optimizasyonu','faq1-a5':'Tam kaynak dosyalar','faq1-a6':'Tam proje sahipliği','faq2-q':'Süreç nasıl işler?','faq2-intro':'Çok basit:','faq2-a1':"1. Fiverr'da benimle iletişime geçin",'faq2-a2':'2. Özel gereksinimlerinizi tartışın','faq2-a3':'3. Geliştirip canlı demo paylaşırım','faq2-a4':'4. Mükemmellik için sınırsız revizyon','faq2-a5':'5. Dokümantasyonla final teslim','faq3-q':'Teslimat süresi ne kadar?','faq3-a':'Teslimat süresi proje karmaşıklığına göre değişir. WordPress (2-14 gün), Shopify (10 gün), Özel (21 gün). Her zaman zamanında teslim.','faq4-q':'Teslimat sonrası destek sunuyor musunuz?','faq4-a':'Evet. Tüm planlar teslimat sonrası destek içerir. Premium paketler uzatılmış öncelikli destek içerir.','faq5-q':'Global pazarlar için kurulum yapabilir misiniz?','faq5-a':'Kesinlikle. ABD, Dubai, Şili ve Türkiye kurulumlarında yerel lojistik, vergi uyumu ve ödeme ağ geçitleri ile uzmanım.','faq6-q':'Hangi dilleri konuşuyorsunuz?','faq6-a':'Türkçe anadilim — mükemmel iletişim. İngilizce iyi seviye — projeyi hallederiz. İspanyolca iyi seviye — projeyi hallederiz.','faq7-q':"90+ PageSpeed'i nasıl garanti ediyorsunuz?",'faq7-a':'Temiz kod, optimize edilmiş görseller ve ağır uygulama kullanmıyorum. Baştan saf performans mimarisi.','cta-title':'Başarınızı İnşa Etmeye Hazır mısınız?','cta-desc':"Fiverr'da benimle iletişime geçin ve 24 saat içinde kişiselleştirilmiş teklif alın. Fiverr tarafından korunan güvenli işlem.",'cta-btn':"Fiverr'da Sohbet Başlat",'cta-note':'Fiverr tarafından korunan güvenli işlem.','footer-desc':'Full Stack Developer | Çok Dilli Web Çözümleri','footer-terms':'Hizmet Şartları','footer-profile':'Fiverr Profili','footer-rights':'Tüm hakları saklıdır.'},
+ar:{'menu':'القائمة','language':'اللغة','nav-home':'الرئيسية','nav-services':'الخدمات','nav-why':'لماذا أنا؟','nav-testimonials':'آراء العملاء','nav-pricing':'الأسعار','nav-portfolio':'أعمالي','nav-faq':'الأسئلة الشائعة','nav-contact':'تواصل معي','badge':'✓ مطور ويب متكامل | تركيا','hero-desc':'خبير ووردبريس، متاجر شوبيفاي وتطوير ويب مخصص. أداء PageSpeed 90+. التركية لغتي الأم · الإنجليزية جيدة · الإسبانية جيدة.','hero-btn':'عرض ملف Fiverr','stat1':'درجة PageSpeed','stat2':'لغات','stat3':'تعديلات','stat4':'أسواق عالمية','services-title':'الخدمات الاحترافية','services-lead':'حلول ويب عالية الأداء بجودة مضمونة.','service1-title':'تطوير ووردبريس الاحترافي','service1-desc':'مواقع ووردبريس عالية الأداء بدرجة PageSpeed 90+. Elementor Pro، تصميم متجاوب، جاهز للتوسع العالمي.','service1-feat1':'درجة PageSpeed 90+','service1-feat2':'تكامل Elementor Pro','service1-feat3':'تصميم متجاوب','service1-feat4':'محسّن لمحركات البحث','service2-title':'متاجر شوبيفاي الاحترافية','service2-desc':'متاجر شوبيفاي عالمية بتحويل عالٍ، قالب Liquid مخصص، إعداد متعدد المناطق، لوجستيات وضرائب.','service2-feat1':'قالب Liquid مخصص','service2-feat2':'إعداد USA/دبي/تشيلي/TR','service2-feat3':'لوجستيات وضرائب محلية','service2-feat4':'تعديلات غير محدودة','service3-title':'هندسة ويب مخصصة','service3-desc':'أنظمة مخصصة متقدمة من الصفر. متعدد اللغات، أمان أقصى وتوسع عالمي.','service3-feat1':'HTML, CSS, JavaScript, PHP','service3-feat2':'بنية مخصصة','service3-feat3':'أمان متين','service3-feat4':'جاهز للأسواق العالمية','why-title':'لماذا تختارني؟','why-lead':'مزايا تجعلني متميزاً في Fiverr.','why1-title':'PageSpeed 90+ مضمون','why1-desc':'بنية نظيفة للتحميل الفوري. بدون تطبيقات ثقيلة، أداء خالص.','why2-title':'إتقان الأسواق العالمية','why2-desc':'إعداد متعدد المناطق لـ USA، دبي، تشيلي، تركيا مع اللوجستيات والامتثال الضريبي.','why3-title':'أمان أقصى','why3-desc':'حماية على مستوى المؤسسات ضد الثغرات. أنظمة مخصصة متينة وآمنة.','why4-title':'تواصل متعدد اللغات','why4-desc':'التركية لغتي الأم (مثالية). الإنجليزية جيدة — ننجز المشروع. الإسبانية جيدة — ننجز المشروع.','why5-title':'بنية جاهزة للتوسع','why5-desc':'مبنية لاستيعاب آلاف المنتجات وحركة مرور ضخمة منذ اليوم الأول.','why6-title':'تعديلات غير محدودة (بريميوم)','why6-desc':'كمال مطلق مضمون. لن أنتهي حتى تكون راضياً 100%.','test-title':'آراء العملاء','test-lead':'تقييمات حقيقية من مشاريع Fiverr المكتملة.','test1-text':'"موقع ووردبريس مثالي. PageSpeed 90+ ويحمّل فوراً. تصميم عصري يحوّل الزوار إلى عملاء."','test2-text':'"متجر شوبيفاي رائع للسوق العالمي. إعداد مثالي لـ USA ودبي وتشيلي مع كامل اللوجستيات."','test3-text':'"موقع مخصص استثنائي. كود نظيف، تواصل ممتاز، وتسليم قبل الموعد."','pricing-title':'باقات الخدمة','pricing-lead':'حلول ويب احترافية. تواصل للحصول على سعر مخصص.','plan1-title':'خبير ووردبريس','plan1-delivery':'⚡ تواصل للحصول على السعر','plan1-feat1':'موقع ووردبريس عالي الأداء','plan1-feat2':'درجة PageSpeed 90+','plan1-feat3':'Elementor Pro ومتجاوب','plan1-feat4':'جاهز لتعدد اللغات','plan1-feat5':'دعم التوسع العالمي','plan1-feat6':'تعديلات غير محدودة','popular':'الأكثر طلباً','plan2-title':'إمبراطورية شوبيفاي','plan2-delivery':'⚡ تواصل للحصول على السعر','plan2-feat1':'قالب Liquid مخصص','plan2-feat2':'تحسين السرعة 90+','plan2-feat3':'إعداد USA/دبي/تشيلي/TR','plan2-feat4':'لوجستيات وضرائب محلية','plan2-feat5':'بوابات دفع متكاملة','plan2-feat6':'تعديلات غير محدودة','plan2-feat7':'توسع لآلاف المنتجات','plan3-title':'حل مؤسسي مخصص','plan3-delivery':'⚡ تواصل للحصول على السعر','plan3-feat1':'برمجة مخصصة متقدمة','plan3-feat2':'بنية متعددة اللغات','plan3-feat3':'أمان أقصى','plan3-feat4':'جاهز للتوسع العالمي','plan3-feat5':'تكاملات مخصصة','plan3-feat6':'تعديلات غير محدودة','plan3-feat7':'دعم أولوي','order-btn':'تواصل عبر Fiverr','contact-btn':'تواصل عبر Fiverr','portfolio-title':'معرض الأعمال','portfolio-lead':'أمثلة على أعمال منجزة لعملاء Fiverr.','port1-title':'موقع ووردبريس احترافي','port1-desc':'ووردبريس عالي الأداء بـ PageSpeed 90+','port2-title':'متجر شوبيفاي عالمي','port2-desc':'تجارة إلكترونية متعددة المناطق مع لوجستيات','port3-title':'حل ويب مخصص','port3-desc':'نظام مخصص على مستوى المؤسسات','portfolio-note':'* مشاريع حقيقية. البيانات الحساسة محمية بالسرية.','faq-title':'الأسئلة الشائعة','faq1-q':'ماذا تشمل خدماتك؟','faq1-intro':'كل باقة تتضمن:','faq1-a1':'درجة PageSpeed 90+ (بدون تطبيقات ثقيلة)','faq1-a2':'كود نظيف ومحسّن','faq1-a3':'تصميم متجاوب (موبايل، تابلت، ديسكتوب)','faq1-a4':'تحسين SEO','faq1-a5':'ملفات المصدر الكاملة','faq1-a6':'ملكية كاملة للمشروع','faq2-q':'كيف تسير العملية؟','faq2-intro':'بسيطة جداً:','faq2-a1':'1. تواصل معي عبر Fiverr','faq2-a2':'2. نناقش متطلباتك المحددة','faq2-a3':'3. أطور وأشارك عرضاً تجريبياً حياً','faq2-a4':'4. تعديلات غير محدودة للكمال','faq2-a5':'5. التسليم النهائي مع التوثيق','faq3-q':'ما هو وقت التسليم؟','faq3-a':'يختلف وقت التسليم حسب تعقيد المشروع. ووردبريس (2-14 يوم)، شوبيفاي (10 أيام)، مخصص (21 يوماً). دائماً في الموعد.','faq4-q':'هل تقدم دعماً بعد التسليم؟','faq4-a':'نعم. جميع الباقات تشمل دعماً بعد التسليم. الباقات المميزة تشمل دعماً أولوياً موسعاً.','faq5-q':'هل يمكنك الإعداد للأسواق العالمية؟','faq5-a':'بالتأكيد. أتخصص في إعداد USA، دبي، تشيلي وتركيا مع اللوجستيات المحلية والامتثال الضريبي وبوابات الدفع.','faq6-q':'ما اللغات التي تتحدثها؟','faq6-a':'التركية لغتي الأم — تواصل مثالي. الإنجليزية بمستوى جيد — ننجز المشروع. الإسبانية بمستوى جيد — ننجز المشروع.','faq7-q':'كيف تضمن PageSpeed 90+؟','faq7-a':'أستخدم كوداً نظيفاً، صوراً محسّنة وبدون تطبيقات ثقيلة. بنية أداء خالص من البداية.','cta-title':'مستعد لبناء نجاحك؟','cta-desc':'تواصل معي عبر Fiverr واحصل على عرض مخصص خلال 24 ساعة. معاملة آمنة محمية بـ Fiverr.','cta-btn':'ابدأ المحادثة على Fiverr','cta-note':'معاملة آمنة محمية بـ Fiverr.','footer-desc':'مطور ويب متكامل | حلول ويب متعددة اللغات','footer-terms':'شروط الخدمة','footer-profile':'ملف Fiverr','footer-rights':'جميع الحقوق محفوظة.'}
+};
+function detectLang(){const l=(navigator.language||'').split('-')[0].toLowerCase();return CONFIG.SUPPORTED_LANGUAGES.includes(l)?l:CONFIG.DEFAULT_LANGUAGE;}
+function getLang(){try{return localStorage.getItem(CONFIG.STORAGE_KEY);}catch(e){return null;}}
+function setLang(l){try{localStorage.setItem(CONFIG.STORAGE_KEY,l);}catch(e){}}
+function changeLang(lang){
+    if(!T[lang])return;
+    const isRTL=RTL_LANGS.includes(lang);
+    document.documentElement.lang=lang;
+    document.documentElement.dir=isRTL?'rtl':'ltr';
+    if(isRTL&&!document.getElementById('cairo-font')){
+        const lk=document.createElement('link');
+        lk.id='cairo-font';lk.rel='stylesheet';
+        lk.href='https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap';
+        document.head.appendChild(lk);
+    }
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+        const k=el.getAttribute('data-i18n');
+        if(T[lang][k]!==undefined)el.textContent=T[lang][k];
+    });
+    document.querySelectorAll('.lang-btn').forEach(function(b){
+        b.classList.toggle('active',b.getAttribute('data-lang')===lang);
+    });
+    setLang(lang);
+    const titles={es:'Ethem Diseño — Desarrollador Full Stack',en:'Ethem Diseño — Full Stack Developer',tr:'Ethem Diseño — Full Stack Developer',ar:'Ethem Diseño — مطور ويب متكامل'};
+    document.title=titles[lang]||titles[CONFIG.DEFAULT_LANGUAGE];
+}
+function initScrollReveal(){
+    const els=document.querySelectorAll('.scroll-reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('revealed');});return;}
+    const obs=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('revealed');obs.unobserve(entry.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){obs.observe(el);});
+}
+function initMenu(){
+    const overlay=document.getElementById('menuOverlay');
+    const btn=document.getElementById('hamburger');
+    const backdrop=document.getElementById('menuBackdrop');
+    if(!overlay||!btn||!backdrop)return;
+    function toggle(){const open=overlay.classList.toggle('show');document.body.style.overflow=open?'hidden':'';btn.setAttribute('aria-expanded',String(open));}
+    function close(){if(overlay.classList.contains('show'))toggle();}
+    btn.addEventListener('click',toggle);
+    backdrop.addEventListener('click',close);
+    document.querySelectorAll('.menu-link').forEach(function(l){l.addEventListener('click',close);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+}
+function initScroll(){
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+        a.addEventListener('click',function(e){
+            const href=this.getAttribute('href');
+            if(href==='#')return;
+            const t=document.querySelector(href);
+            if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-CONFIG.HEADER_OFFSET,behavior:'smooth'});}
+        });
+    });
+}
+function init(){
+    const yr=document.getElementById('currentYear');
+    if(yr)yr.textContent=new Date().getFullYear();
+    changeLang(getLang()||detectLang());
+    document.querySelectorAll('.lang-btn').forEach(function(b){b.addEventListener('click',function(){changeLang(this.getAttribute('data-lang'));});});
+    initMenu();initScroll();initScrollReveal();
+    document.documentElement.style.overflowX='hidden';
+    document.body.style.overflowX='hidden';
+}
+document.readyState==='loading'?document.addEventListener('DOMContentLoaded',init):init();
+})();
+</script>
+</body>
+</html>
